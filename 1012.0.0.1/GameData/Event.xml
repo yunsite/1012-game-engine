@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf8"?>
+<EventBox>
+	<Event>
+		<ID>1</ID>
+		<Name>1</Name>
+		<ExpAdd>2</ExpAdd>
+		<MoneyChange>3</MoneyChange>
+		<HPChange>4</HPChange>
+	</Event>
+	<Event>
+		<ID>2</ID>
+		<Name>5</Name>
+		<ExpAdd>6</ExpAdd>
+		<MoneyChange>7</MoneyChange>
+		<HPChange>8</HPChange>
+	</Event>
+</EventBox>

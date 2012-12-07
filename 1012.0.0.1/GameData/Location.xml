@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf8"?>
+<LocationBox>
+	<Location>
+		<ID>1</ID>
+		<Name>1</Name>
+		<Attribution>2</Attribution>
+		<Building>3</Building>
+	</Location>
+	<Location>
+		<ID>2</ID>
+		<Name>4</Name>
+		<Attribution>5</Attribution>
+		<Building>6</Building>
+	</Location>
+
+</LocationBox>
