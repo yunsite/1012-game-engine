@@ -1,0 +1,28 @@
+
+
+
+
+.IndexInfo {
+margin-left:60px;
+font-size:14px;
+position: relative;
+margin:50px;
+text-align:center;
+}
+
+
+
+@font-face {
+ font-family: 'seigetsuRegular';
+ src: url('seigetsu.eot');
+ src: local('seigetsu Regular'), 
+              local('seigetsu'), 
+              url('seigetsu.woff') format('woff'), 
+              url('seigetsu.ttf') format('truetype'), 
+              url('seigetsu.svg#fontName') format('svg');
+}  
+
+#LogOnBox
+{
+display:none;
+} 

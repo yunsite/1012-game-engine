@@ -1,0 +1,6 @@
+<?php
+include"GameControl.php";
+DataBaseInitialize();
+echo 111;
+
+?>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf8"?>
+<LocationBox>
+	<Location>
+		<Name>1</Name>
+		<Attribution>2</Attribution>
+		<Building>3</Building>
+	</Location>
+	<Location>
+		<Name>4</Name>
+		<Attribution>5</Attribution>
+		<Building>6</Building>
+	</Location>
+
+</LocationBox>
