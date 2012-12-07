@@ -1,0 +1,7 @@
+<?php
+$xml = simplexml_load_file("GameData/Achievement.xml");
+foreach($xml->children() as $child)
+  {
+  echo $child->Name . $child->Description . "<br />";
+  }
+?>

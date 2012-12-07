@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf8"?>
+<ItemBox>
+	<Item>
+		<Type>1</Type>
+		<Effect>2</Effect>
+		<Durable>3</Durable>
+		<Name>14</Name>
+		<Location>5</Location>
+		<SkillId>6</SkillId>
+		<Description>7</Description>
+	</Item>
+	<Achievement>
+		<Name>5</Name>
+		<Description>6</Description>
+		<Title>7</Title>
+		<IsHide>8</IsHide>
+	</Achievement>
+
+
+
+
+
+</ItemBox>

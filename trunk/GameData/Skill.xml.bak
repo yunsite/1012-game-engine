@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf8"?>
+<SkillBox>
+	<Skill>
+		<Name>1</Name>
+		<Description>2</Description>
+		<Level>3</Level>
+		<Type>14</Type>
+	</Skill>
+	<Skill>
+		<Name>1</Name>
+		<Description>2</Description>
+		<Level>3</Level>
+		<Type>14</Type>
+	</Skill>
+
+
+
+
+
+</AchievementBox>

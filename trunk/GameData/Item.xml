@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf8"?>
+<ItemBox>
+	<Item>
+		<Type>1</Type>
+		<Effect>2</Effect>
+		<Durable>3</Durable>
+		<Name>14</Name>
+		<Location>5</Location>
+		<SkillId>6</SkillId>
+		<Description>7</Description>
+		<Value>8</Value>
+	</Item>
+	<Item>
+		<Type>9</Type>
+		<Effect>10</Effect>
+		<Durable>11</Durable>
+		<Name>12</Name>
+		<Location>13</Location>
+		<SkillId>14</SkillId>
+		<Description>15</Description>
+		<Value>16</Value>
+	</Item>
+
+
+
+
+</ItemBox>
