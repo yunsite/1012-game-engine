@@ -1,0 +1,6 @@
+<?php
+$atti=$_GET["a"];
+$xmlDoc = new DOMDocument();
+$xmlDoc->load("GameInfo.xml");
+print $xmlDoc->saveXML();
+?>

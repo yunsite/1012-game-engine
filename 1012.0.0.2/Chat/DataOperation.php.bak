@@ -1,0 +1,32 @@
+<?php
+	
+	$xmlchat_0 = simplexml_load_file("Chat/data/ChatData_0.xml");
+		$i=0;
+		$Check=$xmlchat_0->Message[$i]->Name;
+		while($Check!='')
+			{
+			$xmlchat_0->Message[$i]->Content='';
+			$xmlchat_0->Message[$i]->Name='';
+			$xmlchat_0->Message[$i]->Time='';
+			$i++;
+			$Check=$xmlchat_0->Message[$i]->Name;}
+		$newXML_0 = $xmlchat_0->asXML();   
+		$fp_0 = fopen('Chat/data/ChatData_0.xml', "w");  
+		fwrite($fp_0, $newXML_0);  
+		fclose($fp_0);  
+
+	$xmlchat_1 = simplexml_load_file("Chat/data/ChatData_1.xml");
+		$i=0;
+		$Check=$xmlchat_1->Message[$i]->Name;
+		while($Check!='')
+			{
+			$xmlchat_1->Message[$i]->Content='';
+			$xmlchat_1->Message[$i]->Name='';
+			$xmlchat_1->Message[$i]->Time='';
+			$i++;
+			$Check=$xmlchat_1->Message[$i]->Name;}
+		$newXML_1 = $xmlchat_0->asXML();   
+		$fp_1 = fopen('Chat/data/ChatData_1.xml', "w");  
+		fwrite($fp_1, $newXML_1);  
+		fclose($fp_1);  
+?>
