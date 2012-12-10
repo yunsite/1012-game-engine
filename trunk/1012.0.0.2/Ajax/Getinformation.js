@@ -1,0 +1,57 @@
+var xmlHttpinfo
+var at
+function Showinfo(atti)
+{ 
+xmlHttpinfo=GetXmlHttpObject()
+if (xmlHttpinfo==null)
+ {
+ alert ("Browser does not support HTTP Request")
+ return
+ } 
+
+var url="Ajax/Getinformation.php"
+url=url+"?a="+atti
+url=url+"&sid="+Math.random()
+//document.write(url);
+xmlHttpinfo.onreadystatechange=stateChangedinfo 
+xmlHttpinfo.open("GET",url,true)
+xmlHttpinfo.send(null)
+at=atti
+}
+
+function stateChangedinfo() 
+{ 
+ //document.write(xmlHttp.readyState); 
+ //document.write(xmlHttp.readyState); 
+
+ if (xmlHttpinfo.readyState==4 || xmlHttpinfo.readyState=="complete")
+ { 
+
+ document.getElementById("Status").innerHTML=xmlHttpinfo.responseText 
+ setTimeout("Showinfo(at)",2000);
+ } 
+}
+
+function GetXmlHttpObject()
+{
+var xmlHttp=null;
+
+try
+ {
+ // Firefox, Opera 8.0+, Safari
+ xmlHttp=new XMLHttpRequest();
+ }
+catch (e)
+ {
+ // Internet Explorer
+ try
+  {
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+  }
+ catch (e)
+  {
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+ }
+return xmlHttp;
+}

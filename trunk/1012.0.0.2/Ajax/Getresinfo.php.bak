@@ -1,0 +1,150 @@
+﻿<?php
+include "../Connect.php";
+$nam=$_GET["name"];
+
+if($nam!='')
+{
+	mysql_select_db("db_1012", $con);
+	$result=mysql_query("SELECT * FROM roleset WHERE Name='$nam'"); 
+	$info=mysql_fetch_array($result);
+	$ArmorId=$info['ArmorId'];
+	$HelmetId=$info['HelmetId'];
+	$ShoeId=$info['ShoeId'];
+	$TrumpId=$info['TrumpId'];
+	$TransportId=$info['TransportId'];
+	$AccessoriesId=$info['AccessoriesId'];
+	$WeaponId=$info['WeaponId'];
+	$Bag1=$info['Bag1'];
+	$Bag2=$info['Bag2'];
+	$Bag3=$info['Bag3'];
+	$Bag4=$info['Bag4'];
+	$Bag5=$info['Bag5'];
+	echo '已装备的道具：<br />';
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$HelmetId'"); 
+	$info=mysql_fetch_array($result);
+	$Helmet=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$ArmorId'"); 
+	$info=mysql_fetch_array($result);
+	$Armor=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$ShoeId'"); 
+	$info=mysql_fetch_array($result);
+	$Shoe=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$TrumpId'"); 
+	$info=mysql_fetch_array($result);
+	$Trump=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$TransportId'"); 
+	$info=mysql_fetch_array($result);
+	$Transport=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$AccessoriesId'"); 
+	$info=mysql_fetch_array($result);
+	$Accessories=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$WeaponId'"); 
+	$info=mysql_fetch_array($result);
+	$Weapon=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$Bag1'"); 
+	$info=mysql_fetch_array($result);
+	$Bag1=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$Bag2'"); 
+	$info=mysql_fetch_array($result);
+	$Bag2=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$Bag3'"); 
+	$info=mysql_fetch_array($result);
+	$Bag3=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$Bag4'"); 
+	$info=mysql_fetch_array($result);
+	$Bag4=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	$result=mysql_query("SELECT * FROM itemset WHERE id='$Bag5'"); 
+	$info=mysql_fetch_array($result);
+	$Bag5=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable']);
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Helmet[$i];
+		}
+	echo '<br />';
+
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Armor[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Shoe[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Trump[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Transport[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Accessories[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Weapon[$i];
+		}
+	echo '<br />';
+
+	echo'背包：<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Bag1[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Bag2[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Bag3[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Bag4[$i];
+		}
+	echo '<br />';
+
+	for($i=0;$i<4;$i++)
+		{
+		echo $Bag5[$i];
+		}
+	echo '<br />';
+}
+
+
+
+
+?>
