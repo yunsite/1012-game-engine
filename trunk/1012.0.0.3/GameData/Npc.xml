@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf8"?>
+<NpcBox>
+	<Npc>
+		<ID>1</ID>
+		<Name>1</Name>
+		<Exp>0</Exp>
+		<Level>2</Level>
+		<Strength>3</Strength>
+		<Agility>4</Agility>
+		<Endurance>5</Endurance>
+		<Magic>6</Magic>
+		<TrumpAbility>7</TrumpAbility>
+		<Lucky>0</Lucky>
+		<Money>8</Money>
+		<Status>9</Status>
+		<Kills>10</Kills>
+		<Attitude>11</Attitude>
+		<Contribution>0</Contribution>
+		<Attack>12</Attack>
+		<Defense>13</Defense>
+		<Hit>14</Hit>
+		<Miss>15</Miss>
+		<Move>0</Move>
+		<Health>16</Health>
+		<MagicAttack>18</MagicAttack>
+		<MagicDefense>19</MagicDefense>
+		<MaxHealth>17</MaxHealth>
+		<LastWord>20</LastWord>
+		<KillWord>21</KillWord>
+		<TitleId>22</TitleId>
+		<ArmorId>23</ArmorId>
+		<HelmetId>24</HelmetId>
+		<ShoeId>25</ShoeId>
+		<TrumpId>26</TrumpId>
+		<TransportId>27</TransportId>
+		<AccessoriesId>28</AccessoriesId>
+		<WeaponId>29</WeaponId>
+		<LocationId>31</LocationId>
+		<Discover>10</Discover>
+		<Cover>10></Cover>
+	</Npc>
+	<Npc>
+		<ID>2</ID>
+		<Name>32</Name>
+		<Exp>33</Exp>
+		<Level>34</Level>
+		<Strength>35</Strength>
+		<Agility>36</Agility>
+		<Endurance>37</Endurance>
+		<Magic>38</Magic>
+		<TrumpAbility>39</TrumpAbility>
+		<Lucky>0</Lucky>
+		<Money>40</Money>
+		<Status>41</Status>
+		<Kills>42</Kills>
+		<Attitude>43</Attitude>
+		<Contribution>0</Contribution>
+		<Attack>44</Attack>
+		<Defense>45</Defense>
+		<Hit>46</Hit>
+		<Miss>47</Miss>
+		<Move>0</Move>
+		<Health>48</Health>
+		<MagicAttack>49</MagicAttack>
+		<MagicDefense>50</MagicDefense>
+		<MaxHealth>51</MaxHealth>
+		<LastWord>52</LastWord>
+		<KillWord>53</KillWord>
+		<TitleId>54</TitleId>
+		<ArmorId>55</ArmorId>
+		<HelmetId>56</HelmetId>
+		<ShoeId>57</ShoeId>
+		<TrumpId>58</TrumpId>
+		<TransportId>59</TransportId>
+		<AccessoriesId>60</AccessoriesId>
+		<WeaponId>61</WeaponId>
+		<LocationId>63</LocationId>
+		<Discover>10</Discover>
+		<Cover>10></Cover>
+
+	</Npc>
+
+
+
+
+
+</NpcBox>

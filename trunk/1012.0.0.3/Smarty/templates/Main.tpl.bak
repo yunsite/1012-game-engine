@@ -1,0 +1,315 @@
+﻿{config_load file="test.conf" section="setup"}
+{include file="header.tpl" title={$title}}
+<link rel="stylesheet" type="text/css" href="./JsCss/style_{$Attitude}.css" />
+<script type="text/javascript" src="Chat/Chat.js"></script>
+<script type="text/javascript" src="Ajax/Getroleinfo.js"></script>
+<script type="text/javascript" src="Ajax/Getresinfo.js"></script>
+<script type="text/javascript" src="Ajax/Getinformation.js"></script>
+<script type="text/javascript" src="Ajax/Res.js"></script>
+<script type="text/javascript" src="Ajax/GetSkills.js"></script>
+<script type="text/javascript" src="Ajax/Synthesis.js"></script>
+<script type="text/javascript" src="Ajax/Location.js"></script>
+<script type="text/javascript" src="./JsCss/jquery.blockUI.js"></script>
+
+<script type="text/javascript">
+$(function(){
+$('#Synthesis').click(function(){   //给box_btn绑定一个鼠标点击的事件
+        $.blockUI({   //当点击事件发生时调用弹出层
+        message: $('#SynthesisInterface'),    //要弹出的元素box
+        css: {    //弹出元素的CSS属性
+	backgroundColor: '#000',  
+	width:'49.9%',
+	height:'69.2%',
+	left:'25%', 
+	top:'10%', 
+        background: '#ffffff'
+            }
+        });
+    $('.blockOverlay').attr('title','单击关闭').click($.unblockUI);    
+    //$('#SynthesisSubmit').click($.unblockUI); 
+
+    });
+});
+</script>
+
+<script>
+function go()
+{
+　　	Showinfo({$Attitude})
+	Showchat('','',{$Attitude})　　
+	
+}
+
+</script>
+<script>
+function Showequip()
+{
+	Bag1H();
+	Bag2H();
+	Bag3H();
+	Bag4H();
+	Bag5H();
+	DeHeS();
+	DeArS();
+	DeShS();
+	AS();
+	WS();
+	TranS();
+	TrS();
+	document.getElementById("Tab1").style.color='#fff' ;
+	document.getElementById("Tab1").style.background="{$Color1}";
+	document.getElementById("Tab2").style.color='{$Color1}' ;
+	document.getElementById("Tab2").style.background="rgb(48,10,36)";
+	document.getElementById("Tab3").style.color='{$Color1}' ;
+	document.getElementById("Tab3").style.background="rgb(48,10,36)";
+	SH();
+
+}
+function Showbag()
+{
+	DeHeH();
+	DeArH();
+	DeShH();
+	AH();
+	WH();
+	TranH();
+	TrH();
+	Bag1S();
+	Bag2S();
+	Bag3S();
+	Bag4S();
+	Bag5S();
+	document.getElementById("Tab2").style.color='#fff' ;
+	document.getElementById("Tab2").style.background="{$Color1}";
+	document.getElementById("Tab1").style.color='{$Color1}' ;
+	document.getElementById("Tab1").style.background="rgb(48,10,36)";
+	document.getElementById("Tab3").style.color='{$Color1}' ;
+	document.getElementById("Tab3").style.background="rgb(48,10,36)";
+	SH();
+
+}
+
+function Showskill()
+{
+	DeHeH();
+	DeArH();
+	DeShH();
+	AH();
+	WH();
+	TranH();
+	TrH();
+	Bag1H();
+	Bag2H();
+	Bag3H();
+	Bag4H();
+	Bag5H();
+	SS();
+	document.getElementById("Tab1").style.color='{$Color1}' ;
+	document.getElementById("Tab1").style.background="rgb(48,10,36)";
+	document.getElementById("Tab2").style.color='{$Color1}' ;
+	document.getElementById("Tab2").style.background="rgb(48,10,36)";
+	document.getElementById("Tab3").style.color='#fff' ;
+	document.getElementById("Tab3").style.background="{$Color1}";
+
+
+
+}
+</script>
+
+
+
+</head>
+<body style="background-color:rgb(48,10,36);color:#ffffff;" onload="Showroleinfo('{$User}');Showresinfo('{$User}');Showskills('{$User}');Showsyn('{$User}');Showlocation({$Location});" >
+{include file="bar.tpl"}
+<script>go()</script>
+
+<form method="post" id="chatform" onsubmit="Showchat({$User},this.value,{$Attitude})">
+<input type="text" class="field" name="s" onsubmit="Showchat({$User},this.value,{$Attitude})" id="chat" placeholder="聊天" />
+
+</form>
+
+<div id="Chatdata" style="width:21.8%;height:41%; overflow-y:auto;background-color:{$Color6}">
+
+</div>
+
+<div id="Roledata"  style="background-color:{$Color4};">
+</div>
+
+<div id="Resdata"  style="overflow-y:visible;background-color:{$Color1}">
+</div>
+
+<div id="Status" style="background-color:{$Color5};overflow-y:auto;">
+
+</div>
+
+<div id="Map" style="background-color:{$Color3};">
+
+<img id="Mapimage" src="Image/Map.gif"  alt="Map"/>
+
+<img id="L1" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:0.6%;top:0.6%;
+" onclick="locationchange(1);" alt="BW"/>
+<img id="L1H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:6.6%;top:0.6%;
+"  alt="BW"/>
+
+
+
+<img id="L2" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:1.6%;top:36.6%;
+" onclick="locationchange(2);" alt="BW"/>
+<img id="L2H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:1.6%;top:29.6%;
+"  alt="BW"/>
+
+
+
+<img id="L3" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:6.6%;top:84.6%;
+"onclick="locationchange(3);" alt="BW"/>
+<img id="L3H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:6.6%;top:78.6%;
+"  alt="BW"/>
+
+
+
+<img id="L4" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:15%;top:36.6%;
+"onclick="locationchange(4);" alt="BW"/>
+<img id="L4H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:15%;top:29.6%;
+"  alt="BW"/>
+
+
+
+<img id="L5" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:24%;top:14.6%;
+"onclick="locationchange(5);" alt="BW"/>
+<img id="L5H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:24%;top:4.6%;
+"  alt="BW"/>
+
+
+
+<img id="L6" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:27%;top:68.6%;
+"onclick="locationchange(6);" alt="BW"/>
+<img id="L6H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:27%;top:61.6%;
+" alt="BW"/>
+
+
+
+<img id="L8" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:48%;top:69.6%;
+"onclick="locationchange(8);" alt="BW"/>
+<img id="L8H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:48%;top:61.6%;
+"  alt="BW"/>
+
+
+
+
+<img id="L7" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:48.3%;top:10.6%;
+"onclick="locationchange(7);" alt="BW"/>
+<img id="L7H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:48.3%;top:2.6%;
+"  alt="BW"/>
+
+
+
+<img id="L12" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:89.3%;top:0.6%;
+"onclick="locationchange(12);" alt="BW"/>
+<img id="L12H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:82.3%;top:0.6%;
+"  alt="BW"/>
+
+
+
+<img id="L11" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:89.3%;top:40.6%;
+"onclick="locationchange(11);" alt="BW"/>
+<img id="L11H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:89.3%;top:31.6%;
+"  alt="BW"/>
+
+
+
+<img id="L13" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:92.3%;top:70.6%;
+"onclick="locationchange(13);" alt="BW"/>
+<img id="L13H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:92.3%;top:63.6%;
+"  alt="BW"/>
+
+
+
+
+<img id="L14" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:75.3%;top:85.6%;
+"onclick="locationchange(14);" alt="BW"/>
+<img id="L14H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:75.3%;top:78.6%;
+"  alt="BW"/>
+
+
+
+
+<img id="L10" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:75.3%;top:40.6%;
+"onclick="locationchange(10);" alt="BW"/>
+<img id="L10H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:75.3%;top:31.6%;
+"  alt="BW"/>
+
+
+
+<img id="L9" src="Image/BW.gif" style="z-index:12;position: absolute;
+left:64.3%;top:40.6%;
+"onclick="locationchange(9);" alt="BW"/>
+<img id="L9H" src="Image/Sheep.gif" style="z-index:12;position: absolute;
+left:64.3%;top:31.6%;
+"  alt="BW"/>
+
+</div>
+
+<div id="Option" style="background-color:{$Color2};">
+
+<div id="Synthesis"  onclick="Showsyn('{$User}');">道具合成</div>
+<div id="Intelligence">己方情报</div>
+<div id=""></div>
+<div id="SkillTree">全技能树</div>
+
+</div>
+
+<div id="Skills" style="overflow-y:visible;background-color:{$Color1};z-index:0;">
+
+</div>
+
+
+<div id="Tx">
+<img src="{$Tx}"  alt="头像"  />
+</div>
+
+
+<div id="SynthesisInterface" style="display:none;">
+
+
+
+</div>
+
+<div id="Attribution" >
+{if $Attitude}
+<p>魔法阵营</p>
+{else}
+<p>科学阵营</p>
+{/if}
+</div>
+
+
+
+
+
+{include file="footer.tpl"}

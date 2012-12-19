@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf8"?>
+<game>
+<chapter>1</chapter>
+<loop>32</loop>
+<gamemode>1</gamemode>
+<playeramount>1</playeramount>
+<begintime/>
+<beginstamp>1354956298</beginstamp>
+<overtime/>
+<overstamp>1355898385</overstamp>
+<maxkiller/>
+<maxcontributer/>
+<winner/>
+<content>0.50000</content>
+<ending/>
+</game>

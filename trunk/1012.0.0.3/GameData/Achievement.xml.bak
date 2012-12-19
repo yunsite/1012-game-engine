@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf8"?>
+<AchievementBox>
+	<Achievement>
+		<Name>Hi</Name>
+		<Description>2</Description>
+		<Title></Title>
+		<IsHide>14</IsHide>
+	</Achievement>
+	<Achievement>
+		<Name>5</Name>
+		<Description>6</Description>
+		<Title>7</Title>
+		<IsHide>8</IsHide>
+	</Achievement>
+
+
+
+
+
+</AchievementBox>
