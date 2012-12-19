@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf8"?>
+<MessageBox>
+	<Message>
+		<Name>Hi</Name>
+		<Content>2</Content>
+		<Time>14</Time>
+	</Message>
+	<Message>
+		<Name>Hi</Name>
+		<Content>2</Content>
+		<Time>14</Time>
+	</Message>
+</MessageBox>
