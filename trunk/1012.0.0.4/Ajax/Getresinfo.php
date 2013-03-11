@@ -1,0 +1,207 @@
+﻿<?php
+include "../Connect.php";
+$nam=$_GET["name"];
+
+if($nam!='')
+{
+	mysql_select_db("db_1012", $con);
+	$result=mysql_query("SELECT * FROM RoleSet WHERE Name='$nam'"); 
+	$info=mysql_fetch_array($result);
+	$ArmorId=$info['ArmorId'];
+	$HelmetId=$info['HelmetId'];
+	$ShoeId=$info['ShoeId'];
+	$TrumpId=$info['TrumpId'];
+	$TransportId=$info['TransportId'];
+	$AccessoriesId=$info['AccessoriesId'];
+	$WeaponId=$info['WeaponId'];
+	$Bag1=$info['Bag1'];
+	$Bag2=$info['Bag2'];
+	$Bag3=$info['Bag3'];
+	$Bag4=$info['Bag4'];
+	$Bag5=$info['Bag5'];
+	
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$HelmetId'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Helmet=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$ArmorId'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Armor=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$ShoeId'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Shoe=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$TrumpId'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Trump=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$TransportId'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Transport=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$AccessoriesId'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Accessories=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$WeaponId'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Weapon=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$Bag1'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Bag1=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$Bag2'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Bag2=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$Bag3'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Bag3=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$Bag4'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Bag4=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+
+	$result=mysql_query("SELECT * FROM ItemSet WHERE id='$Bag5'"); 
+	$info=mysql_fetch_array($result);
+	$info['Type']=ResTrans($info['Type']);
+	$Bag5=array($info['Name'],$info['Type'],$info['Effect'],$info['Durable'],$info['Description']);
+	
+		echo '<div id="DeHe" '.' onmouseover="DeHeHS();"  onMouseOut="DeHeHH();">&nbsp&nbsp'.$Helmet[0].'<button type="button" class="Unequip" onclick="Unequip(1);">卸下</button>'.'</div>';
+		echo '<div id="DeHeH">'.'种类：'.$Helmet[1].'&nbsp&nbsp效果：'.$Helmet[2].'&nbsp&nbsp耐久：'.$Helmet[3].'&nbsp&nbsp描述：'.$Helmet[4].'</div>';
+		echo '<br />';
+
+		echo '<div id="DeAr"'.' onmouseover="DeArHS();"  onMouseOut="DeArHH();">&nbsp&nbsp'.$Armor[0].'<button type="button" class="Unequip" onclick="Unequip(2);">卸下</button>'.'</div>';
+		echo '<div id="DeArH">'.'种类：'.$Armor[1].'&nbsp&nbsp效果：'.$Armor[2].'&nbsp&nbsp耐久：'.$Armor[3].'&nbsp&nbsp描述：'.$Armor[4].'</div>';
+
+		echo '<br />';
+		echo '<div id="DeSh"'.' onmouseover="DeShHS();"  onMouseOut="DeShHH();">&nbsp&nbsp'.$Shoe[0].'<button type="button" class="Unequip" onclick="Unequip(3);">卸下</button>'.'</div>';
+		echo '<div id="DeShH">'.'种类：'.$Shoe[1].'&nbsp&nbsp效果：'.$Shoe[2].'&nbsp&nbsp耐久：'.$Shoe[3].'&nbsp&nbsp描述：'.$Shoe[4].'</div>';	
+
+
+		echo '<br />';
+		echo '<div id="Tr"'.' onmouseover="TrHS();"  onMouseOut="TrHH();">&nbsp&nbsp'.$Trump[0].'<button type="button" class="Unequip" onclick="Unequip(4);">卸下</button>'.'</div>';
+		echo '<div id="TrH">'.'种类：'.$Trump[1].'&nbsp&nbsp效果：'.$Trump[2].'&nbsp&nbsp耐久：'.$Trump[3].'&nbsp&nbsp描述：'.$Trump[4].'</div>';	
+
+
+
+
+		echo '<br />';
+		echo '<div id="Tran"'.' onmouseover="TranHS();"  onMouseOut="TranHH();">&nbsp&nbsp'.$Transport[0].'<button type="button" class="Unequip" onclick="Unequip(5);">卸下</button>'.'</div>';
+		echo '<div id="TranH">'.'种类：'.$Transport[1].'&nbsp&nbsp效果：'.$Transport[2].'&nbsp&nbsp耐久：'.$Transport[3].'&nbsp&nbsp描述：'.$Transport[4].'</div>';	
+
+
+
+		echo '<br />';
+		echo '<div id="A"'.' onmouseover="AHS();"  onMouseOut="AHH();">&nbsp&nbsp'.$Accessories[0].'<button type="button" class="Unequip" onclick="Unequip(6);">卸下</button>'.'</div>';
+		echo '<div id="AH">'.'种类：'.$Accessories[1].'&nbsp&nbsp效果：'.$Accessories[2].'&nbsp&nbsp耐久：'.$Accessories[3].'&nbsp&nbsp描述：'.$Accessories[4].'</div>';	
+
+
+
+		echo '<br />';
+		echo '<div id="W"'.' onmouseover="WHS();"  onMouseOut="WHH();">&nbsp&nbsp'.$Weapon[0].'<button type="button" class="Unequip" onclick="Unequip(7);">卸下</button>'.'</div>';
+		echo '<div id="WH">'.'种类：'.$Weapon[1].'&nbsp&nbsp效果：'.$Weapon[2].'&nbsp&nbsp耐久：'.$Weapon[3].'&nbsp&nbsp描述：'.$Weapon[4].'</div>';	
+
+
+		echo '<br />';
+
+		echo '<div id="Bag1"'.' onmouseover="Bag1HS();"  onMouseOut="Bag1HH();">&nbsp&nbsp'.$Bag1[0].'<button type="button" class="Unequip" onclick="Drop(1);">丢弃</button>'.'<button type="button" class="Use" onclick="Use(1);">使用</button>'.'</div>';
+		echo '<div id="Bag1H">'.'种类：'.$Bag1[1].'&nbsp&nbsp效果：'.$Bag1[2].'&nbsp&nbsp耐久：'.$Bag1[3].'&nbsp&nbsp描述：'.$Bag1[4].'</div>';	
+
+
+
+		echo '<br />';
+		echo '<div id="Bag2"'.' onmouseover="Bag2HS();"  onMouseOut="Bag2HH();">&nbsp&nbsp'.$Bag2[0].'<button type="button" class="Unequip" onclick="Drop(2);">丢弃</button>'.'<button type="button" class="Use" onclick="Use(2);">使用</button>'.'</div>';
+		echo '<div id="Bag2H">'.'种类：'.$Bag2[1].'&nbsp&nbsp效果：'.$Bag2[2].'&nbsp&nbsp耐久：'.$Bag2[3].'&nbsp&nbsp描述：'.$Bag2[4].'</div>';	
+
+
+		echo '<br />';
+		echo '<div id="Bag3"'.' onmouseover="Bag3HS();"  onMouseOut="Bag3HH();">&nbsp&nbsp'.$Bag3[0].'<button type="button" class="Unequip" onclick="Drop(3);">丢弃</button>'.'<button type="button" class="Use" onclick="Use(3);">使用</button>'.'</div>';
+		echo '<div id="Bag3H">'.'种类：'.$Bag3[1].'&nbsp&nbsp效果：'.$Bag3[2].'&nbsp&nbsp耐久：'.$Bag3[3].'&nbsp&nbsp描述：'.$Bag3[4].'</div>';	
+
+
+
+		echo '<br />';
+		echo '<div id="Bag4"'.' onmouseover="Bag4HS();"  onMouseOut="Bag4HH();">&nbsp&nbsp'.$Bag4[0].'<button type="button" class="Unequip" onclick="Drop(4);">丢弃</button>'.'<button type="button" class="Use" onclick="Use(4);">使用</button>'.'</div>';
+		echo '<div id="Bag4H">'.'种类：'.$Bag4[1].'&nbsp&nbsp效果：'.$Bag4[2].'&nbsp&nbsp耐久：'.$Bag4[3].'&nbsp&nbsp描述：'.$Bag4[4].'</div>';	
+
+
+
+
+		echo '<br />';
+		echo '<div id="Bag5"'.' onmouseover="Bag5HS();"  onMouseOut="Bag5HH();">&nbsp&nbsp'.$Bag5[0].'<button type="button" class="Unequip" onclick="Drop(5);">丢弃</button>'.'<button type="button" class="Use" onclick="Use(5);">使用</button>'.'</div>';
+		echo '<div id="Bag5H">'.'种类：'.$Bag5[1].'&nbsp&nbsp效果：'.$Bag5[2].'&nbsp&nbsp耐久：'.$Bag5[3].'&nbsp&nbsp描述：'.$Bag5[4].'</div>';	
+
+	echo '<br />';
+	echo '<div id="Tab1" onclick="Showequip();">装备</div>';
+	echo '<div id="Tab2" onclick="Showbag();">背包</div>';
+	echo '<div id="Tab3" onclick="Showskill();">技能</div>';
+
+}
+
+
+function ResTrans($str){
+switch($str)
+	{case 'WK':
+		return '&nbsp&nbsp斩系武器&nbsp&nbsp';
+	case 'WC':
+		return '&nbsp&nbsp投系武器&nbsp&nbsp';
+	case 'WG':
+		return '&nbsp&nbsp射系武器&nbsp&nbsp';
+	case 'WS':
+		return '&nbsp&nbsp符咒武器&nbsp&nbsp';
+	case 'WMK':
+		return '&nbsp&nbsp魔剑武器';
+	case 'WF':
+		return '&nbsp&nbsp魔杖武器&nbsp&nbsp';
+	case 'WT':
+		return '&nbsp&nbsp宝具&nbsp&nbsp';
+	case 'DF':
+		return '&nbsp&nbsp腿部防具&nbsp&nbsp';
+	case 'A':
+		return '&nbsp&nbsp饰品&nbsp&nbsp';
+	case 'DB':
+		return '&nbsp&nbsp身体防具&nbsp&nbsp';
+	case 'DH':
+		return '&nbsp&nbsp头部防具&nbsp&nbsp';
+	case 'T':
+		return '&nbsp&nbsp交通工具&nbsp&nbsp';
+	case 'HH':
+		return '&nbsp&nbsp生命恢复&nbsp&nbsp';
+	case 'PH':
+		return '&nbsp&nbsp生命恢复&nbsp&nbsp';
+	case 'R':
+		return '&nbsp&nbsp仪器&nbsp&nbsp';
+	case 'C':
+		return '&nbsp&nbsp药剂&nbsp&nbsp';
+	case 'T':
+		return '&nbsp&nbsp陷阱&nbsp&nbsp';
+	case 'X':
+		return '&nbsp&nbsp合成&nbsp&nbsp';
+	case 'Y':
+		return '&nbsp&nbsp特殊&nbsp&nbsp';
+	case 'G':
+		return '&nbsp&nbsp弹药&nbsp&nbsp';
+	case 'V':
+		return '&nbsp&nbsp技能书籍&nbsp&nbsp';
+	case 'P':
+		return '&nbsp&nbsp礼品盒&nbsp&nbsp';
+	default:
+		return null;
+	}
+}
+
+?>

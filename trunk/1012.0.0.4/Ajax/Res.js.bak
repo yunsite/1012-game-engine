@@ -1,0 +1,862 @@
+﻿function DeHeHS()
+{ 
+ document.getElementById("DeHeH").style.display='inline' 
+
+} 
+
+function DeHeHH()
+{
+ document.getElementById("DeHeH").style.display='none' 
+
+}
+
+function DeArHS()
+{ 
+ document.getElementById("DeArH").style.display='inline' 
+
+} 
+
+function DeArHH()
+{
+ document.getElementById("DeArH").style.display='none' 
+
+}
+
+
+
+
+function DeShHS()
+{ 
+ document.getElementById("DeShH").style.display='inline' 
+
+} 
+
+function DeShHH()
+{
+ document.getElementById("DeShH").style.display='none' 
+
+}
+
+
+function TranHS()
+{ 
+ document.getElementById("TranH").style.display='inline' 
+
+} 
+
+function TranHH()
+{
+ document.getElementById("TranH").style.display='none' 
+
+}
+
+
+
+function TrHS()
+{ 
+ document.getElementById("TrH").style.display='inline' 
+
+} 
+
+function TrHH()
+{
+ document.getElementById("TrH").style.display='none' 
+
+}
+
+
+
+function AHS()
+{ 
+ document.getElementById("AH").style.display='inline' 
+
+} 
+
+function AHH()
+{
+ document.getElementById("AH").style.display='none' 
+
+}
+
+
+
+function WHS()
+{ 
+ document.getElementById("WH").style.display='inline' 
+
+} 
+
+function WHH()
+{
+ document.getElementById("WH").style.display='none' 
+
+}
+
+
+
+
+
+
+function DeHeS()
+{ 
+ document.getElementById("DeHe").style.display='inline' 
+
+} 
+
+function DeHeH()
+{
+ document.getElementById("DeHe").style.display='none' 
+
+}
+
+function DeArS()
+{ 
+ document.getElementById("DeAr").style.display='inline' 
+
+} 
+
+function DeArH()
+{
+ document.getElementById("DeAr").style.display='none' 
+
+}
+
+
+
+
+function DeShS()
+{ 
+ document.getElementById("DeSh").style.display='inline' 
+
+} 
+
+function DeShH()
+{
+ document.getElementById("DeSh").style.display='none' 
+
+}
+
+
+function TranS()
+{ 
+ document.getElementById("Tran").style.display='inline' 
+
+} 
+
+function TranH()
+{
+ document.getElementById("Tran").style.display='none' 
+
+}
+
+
+
+function TrS()
+{ 
+ document.getElementById("Tr").style.display='inline' 
+
+} 
+
+function TrH()
+{
+ document.getElementById("Tr").style.display='none' 
+
+}
+
+
+
+function AS()
+{ 
+ document.getElementById("A").style.display='inline' 
+
+} 
+
+function AH()
+{
+ document.getElementById("A").style.display='none' 
+
+}
+
+
+
+function WS()
+{ 
+ document.getElementById("W").style.display='inline' 
+
+} 
+
+function WH()
+{
+ document.getElementById("W").style.display='none' 
+
+}
+
+
+function Bag1HS()
+{ 
+ document.getElementById("Bag1H").style.display='inline' 
+
+} 
+
+function Bag1HH()
+{
+ document.getElementById("Bag1H").style.display='none' 
+
+}
+
+
+function Bag2HS()
+{ 
+ document.getElementById("Bag2H").style.display='inline' 
+
+} 
+
+function Bag2HH()
+{
+ document.getElementById("Bag2H").style.display='none' 
+
+}
+
+function Bag3HS()
+{ 
+ document.getElementById("Bag3H").style.display='inline' 
+
+} 
+
+function Bag3HH()
+{
+ document.getElementById("Bag3H").style.display='none' 
+
+}
+
+
+function Bag4HS()
+{ 
+ document.getElementById("Bag4H").style.display='inline' 
+
+} 
+
+function Bag4HH()
+{
+ document.getElementById("Bag4H").style.display='none' 
+
+}
+
+function Bag5HS()
+{ 
+ document.getElementById("Bag5H").style.display='inline' 
+
+} 
+
+function Bag5HH()
+{
+ document.getElementById("Bag5H").style.display='none' 
+
+}
+
+
+
+function Bag1S()
+{ 
+ document.getElementById("Bag1").style.display='inline' 
+
+} 
+
+function Bag1H()
+{
+ document.getElementById("Bag1").style.display='none' 
+
+}
+
+
+function Bag2S()
+{ 
+ document.getElementById("Bag2").style.display='inline' 
+
+} 
+
+function Bag2H()
+{
+ document.getElementById("Bag2").style.display='none' 
+
+}
+
+function Bag3S()
+{ 
+ document.getElementById("Bag3").style.display='inline' 
+
+} 
+
+function Bag3H()
+{
+ document.getElementById("Bag3").style.display='none' 
+
+}
+
+
+function Bag4S()
+{ 
+ document.getElementById("Bag4").style.display='inline' 
+
+} 
+
+function Bag4H()
+{
+ document.getElementById("Bag4").style.display='none' 
+
+}
+
+function Bag5S()
+{ 
+ document.getElementById("Bag5").style.display='inline' 
+
+} 
+
+function Bag5H()
+{
+ document.getElementById("Bag5").style.display='none' 
+
+}
+
+
+
+
+
+
+function S1S()
+{ 
+ document.getElementById("S1").style.display='inline' 
+
+} 
+
+function S1H()
+{
+ document.getElementById("S1").style.display='none' 
+
+}
+
+
+function S2S()
+{ 
+ document.getElementById("S2").style.display='inline' 
+
+} 
+
+function S2H()
+{
+ document.getElementById("S2").style.display='none' 
+
+}
+
+function S3S()
+{ 
+ document.getElementById("S3").style.display='inline' 
+
+} 
+
+function S3H()
+{
+ document.getElementById("S3").style.display='none' 
+
+}
+
+
+function S4S()
+{ 
+ document.getElementById("S4").style.display='inline' 
+
+} 
+
+function S4H()
+{
+ document.getElementById("S4").style.display='none' 
+
+}
+
+function S5S()
+{ 
+ document.getElementById("S5").style.display='inline' 
+
+} 
+
+function S5H()
+{
+ document.getElementById("S5").style.display='none' 
+
+}
+
+function S6S()
+{ 
+ document.getElementById("S6").style.display='inline' 
+
+} 
+
+function S6H()
+{
+ document.getElementById("S6").style.display='none' 
+
+}
+
+
+function S7S()
+{ 
+ document.getElementById("S7").style.display='inline' 
+
+} 
+
+function S7H()
+{
+ document.getElementById("S7").style.display='none' 
+
+}
+
+function S8S()
+{ 
+ document.getElementById("S8").style.display='inline' 
+
+} 
+
+function S8H()
+{
+ document.getElementById("S8").style.display='none' 
+
+}
+
+
+function S9S()
+{ 
+ document.getElementById("S9").style.display='inline' 
+
+} 
+
+function S9H()
+{
+ document.getElementById("S9").style.display='none' 
+
+}
+
+function S10S()
+{ 
+ document.getElementById("S10").style.display='inline' 
+
+} 
+
+function S10H()
+{
+ document.getElementById("S10").style.display='none' 
+
+}
+
+function S11S()
+{ 
+ document.getElementById("S11").style.display='inline' 
+
+} 
+
+function S11H()
+{
+ document.getElementById("S11").style.display='none' 
+
+}
+
+
+function S12S()
+{ 
+ document.getElementById("S12").style.display='inline' 
+
+} 
+
+function S12H()
+{
+ document.getElementById("S12").style.display='none' 
+
+}
+
+function S13S()
+{ 
+ document.getElementById("S13").style.display='inline' 
+
+} 
+
+function S13H()
+{
+ document.getElementById("S13").style.display='none' 
+
+}
+
+
+function S14S()
+{ 
+ document.getElementById("S14").style.display='inline' 
+
+} 
+
+function S14H()
+{
+ document.getElementById("S14").style.display='none' 
+
+}
+
+function S15S()
+{ 
+ document.getElementById("S15").style.display='inline' 
+
+} 
+
+function S15H()
+{
+ document.getElementById("S15").style.display='none' 
+
+}
+
+
+
+
+function S1HS()
+{ 
+ document.getElementById("S1H").style.display='inline' 
+
+} 
+
+function S1HH()
+{
+ document.getElementById("S1H").style.display='none' 
+
+}
+
+
+function S2HS()
+{ 
+ document.getElementById("S2H").style.display='inline' 
+
+} 
+
+function S2HH()
+{
+ document.getElementById("S2H").style.display='none' 
+
+}
+
+function S3HS()
+{ 
+ document.getElementById("S3H").style.display='inline' 
+
+} 
+
+function S3HH()
+{
+ document.getElementById("S3H").style.display='none' 
+
+}
+
+
+function S4HS()
+{ 
+ document.getElementById("S4H").style.display='inline' 
+
+} 
+
+function S4HH()
+{
+ document.getElementById("S4H").style.display='none' 
+
+}
+
+function S5HS()
+{ 
+ document.getElementById("S5H").style.display='inline' 
+
+} 
+
+function S5HH()
+{
+ document.getElementById("S5H").style.display='none' 
+
+}
+
+function S6HS()
+{ 
+ document.getElementById("S6H").style.display='inline' 
+
+} 
+
+function S6HH()
+{
+ document.getElementById("S6H").style.display='none' 
+
+}
+
+
+function S7HS()
+{ 
+ document.getElementById("S7H").style.display='inline' 
+
+} 
+
+function S7HH()
+{
+ document.getElementById("S7H").style.display='none' 
+
+}
+
+function S8HS()
+{ 
+ document.getElementById("S8H").style.display='inline' 
+
+} 
+
+function S8HH()
+{
+ document.getElementById("S8H").style.display='none' 
+
+}
+
+
+function S9HS()
+{ 
+ document.getElementById("S9H").style.display='inline' 
+
+} 
+
+function S9HH()
+{
+ document.getElementById("S9H").style.display='none' 
+
+}
+
+function S10HS()
+{ 
+ document.getElementById("S10H").style.display='inline' 
+
+} 
+
+function S10HH()
+{
+ document.getElementById("S10H").style.display='none' 
+
+}
+
+function S11HS()
+{ 
+ document.getElementById("S11H").style.display='inline' 
+
+} 
+
+function S11HH()
+{
+ document.getElementById("S11H").style.display='none' 
+
+}
+
+
+function S12HS()
+{ 
+ document.getElementById("S12H").style.display='inline' 
+
+} 
+
+function S12HH()
+{
+ document.getElementById("S12H").style.display='none' 
+
+}
+
+function S13HS()
+{ 
+ document.getElementById("S13H").style.display='inline' 
+
+} 
+
+function S13HH()
+{
+ document.getElementById("S13H").style.display='none' 
+
+}
+
+
+function S14HS()
+{ 
+ document.getElementById("S14H").style.display='inline' 
+
+} 
+
+function S14HH()
+{
+ document.getElementById("S14H").style.display='none' 
+
+}
+
+function S15HS()
+{ 
+ document.getElementById("S15H").style.display='inline' 
+
+} 
+
+function S15HH()
+{
+ document.getElementById("S15H").style.display='none' 
+
+}
+
+function SHH()
+{
+ S1HH();
+ S2HH();
+ S3HH();
+ S4HH();
+ S5HH();
+ S6HH();
+ S7HH();
+ S8HH();
+ S9HH();
+ S10HH();
+ S11HH();
+ S12HH();
+ S13HH();
+ S14HH();
+ S15HH();
+
+}
+
+
+
+
+function SS()
+{
+ S1S();
+ S2S();
+ S3S();
+ S4S();
+ S5S();
+ S6S();
+ S7S();
+ S8S();
+ S9S();
+ S10S();
+ S11S();
+ S12S();
+ S13S();
+ S14S();
+ S15S();
+
+
+}
+
+function SH()
+{
+ S1H();
+ S2H();
+ S3H();
+ S4H();
+ S5H();
+ S6H();
+ S7H();
+ S8H();
+ S9H();
+ S10H();
+ S11H();
+ S12H();
+ S13H();
+ S14H();
+ S15H();
+
+
+}
+
+var xmlHttpresoperation
+
+function stateChangedresoperation() 
+{ 
+ //document.write(xmlHttp.readyState); 
+ //document.write(xmlHttp.readyState); 
+
+ if (xmlHttpresoperation.readyState==4 || xmlHttpresoperation.readyState=="complete")
+ { 
+	Showresinfo(nam);
+	//document.getElementById("Resdata").innerHTML=xmlHttpres.responseText;
+	if(xmlHttpresoperation.responseText=='full')
+		alert('背包已满！');
+ } 
+}
+
+function GetXmlHttpObject()
+{
+var xmlHttp=null;
+
+try
+ {
+ // Firefox, Opera 8.0+, Safari
+ xmlHttp=new XMLHttpRequest();
+ }
+catch (e)
+ {
+ // Internet Explorer
+ try
+  {
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+  }
+ catch (e)
+  {
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+ }
+return xmlHttp;
+}
+
+
+function Drop(id)
+{
+xmlHttpresoperation=GetXmlHttpObject()
+if (xmlHttpresoperation==null)
+ {
+ alert ("Browser does not support HTTP Request")
+ return
+ } 
+
+var url="Ajax/Resoperation.php"
+url=url+"?dropid="+id
+url=url+"&sid="+Math.random()
+//document.write(url);
+xmlHttpresoperation.onreadystatechange=stateChangedresoperation 
+xmlHttpresoperation.open("GET",url,true)
+xmlHttpresoperation.send(null)
+
+}
+
+
+function Use(id)
+{
+xmlHttpresoperation=GetXmlHttpObject()
+if (xmlHttpresoperation==null)
+ {
+ alert ("Browser does not support HTTP Request")
+ return
+ } 
+
+var url="Ajax/Resoperation.php"
+url=url+"?useid="+id
+url=url+"&sid="+Math.random()
+//document.write(url);
+xmlHttpresoperation.onreadystatechange=stateChangedresoperation 
+xmlHttpresoperation.open("GET",url,true)
+xmlHttpresoperation.send(null)
+}
+
+
+function Unequip(id)
+{
+xmlHttpresoperation=GetXmlHttpObject()
+if (xmlHttpresoperation==null)
+ {
+ alert ("Browser does not support HTTP Request")
+ return
+ } 
+
+var url="Ajax/Resoperation.php"
+url=url+"?unequipid="+id
+url=url+"&sid="+Math.random()
+//document.write(url);
+xmlHttpresoperation.onreadystatechange=stateChangedresoperation 
+xmlHttpresoperation.open("GET",url,true)
+xmlHttpresoperation.send(null)
+}
