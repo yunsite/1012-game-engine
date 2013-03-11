@@ -1,0 +1,8 @@
+﻿<?php
+$con = mysql_connect("mysql.zongdu.co.cc","zongdu","decode~U");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+mysql_query("set names 'UTF8'");
+?>

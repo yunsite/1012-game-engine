@@ -1,0 +1,15 @@
+<?php
+session_start();
+include "../Connect.php";
+$nam=$_SESSION['User'];
+mysql_select_db("db_1012", $con);
+$result=mysql_query("SELECT SkillId FROM roleset WHERE Name=$nam"); 
+$info=mysql_fetch_array($result);
+$skilllearned=$info[0];
+$result=mysql_query("SELECT * FROM skillset "); 
+$info=mysql_fetch_array($result);
+
+
+
+
+?>

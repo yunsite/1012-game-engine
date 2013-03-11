@@ -1,0 +1,36 @@
+﻿<?php
+$con=$_GET["q"];
+$nam=$_GET["n"];
+$atti=$_GET["a"];
+
+
+
+	
+if($atti==0)
+		{
+
+		$xml_00 = simplexml_load_file("data/ChatData_0.xml");
+		$i=0;
+		
+		$Check=$xml_00->Message[$i]->Content;
+		while($Check!='')
+			{echo '&nbsp&nbsp&nbsp&nbsp'.$xml_00->Message[$i]->Name.' : '.$xml_00->Message[$i]->Content.'('.$xml_00->Message[$i]->Time.')'.'<br />';
+			$i++;
+			$Check=$xml_00->Message[$i]->Content;}
+		}
+if($atti==1)
+		{
+		$xml_11 = simplexml_load_file("data/ChatData_1.xml");
+		$i=0;
+		
+		$Check=$xml_11->Message[$i]->Content;
+		while($Check!='')
+			{echo '&nbsp&nbsp&nbsp&nbsp'.$xml_11->Message[$i]->Name.' : '.$xml_11->Message[$i]->Content.'('.$xml_11->Message[$i]->Time.')'.'<br />';
+			$i++;
+			$Check=$xml_11->Message[$i]->Content;}
+		}
+
+
+
+
+?>
